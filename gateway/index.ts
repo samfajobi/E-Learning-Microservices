@@ -10,6 +10,10 @@ app.use(express.json());
 app.use("/admin", proxy("http://localhost:8001"))
 app.use("/lecturer", proxy("http://localhost:8002"))
 app.use("/user", proxy("http://localhost:8003"))
+app.use("/admin", proxy("http://localhost:8001"))
+
+app.use("/admin", proxy("http://localhost:8001"))
+
 
 
 const PORT = 8000;
